@@ -16,6 +16,14 @@ const config: Config = {
         'main': "url('../public/images/bg.png')",
         'transparent-gradient': 'radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 50%)'
       },
+      backgroundColor: {
+        'darkBlue': "#000D19",
+        'dark': "#12151C"
+      },
+      fontFamily: {
+        fancy: ["var(--font-fancy)"],
+        clean: ["var(--font-clean)"]
+      },
     },
   },
   plugins: [

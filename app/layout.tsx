@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Belleza, DM_Sans } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const belleza = Belleza({
+  subsets: ["latin"],
+  variable: "--font-fancy",
+  weight: "400",
+});
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-clean",
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Mizu Izakaya",
@@ -16,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${belleza.variable} ${dmSans.variable}`}>{children}</body>
     </html>
   );
 }
