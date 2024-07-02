@@ -5,8 +5,8 @@ import About from "@/components/About";
 
 export default function Home() {
   return (
-    <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="max-w-8xl w-screen px-12 py-12 bg-dark">
+    <main className="relative bg-main bg-contain bg-no-repeat flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      <div className="max-w-8xl w-screen px-12 py-12 bg-building-exterior bg-cover bg-no-repeat bg-left-bottom">
         <Image
           alt="Mizu Izakaya Icon"
           src={mizuIcon}
@@ -14,7 +14,7 @@ export default function Home() {
         />
         <Hero />
       </div>
-      <div className="max-w-8xl w-screen px-12 py-12 bg-darkBlue">
+      <div className="max-w-8xl w-screen px-12 py-12 bg-contain">
         <About />
       </div>
     </main>
