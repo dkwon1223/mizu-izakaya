@@ -5,7 +5,7 @@ import { HeroHighlight, Highlight } from "./hero-highlight";
 
 const Hero = () => {
   return (
-    <div className="pb-24">
+    <div>
         <HeroHighlight>
         <motion.h1
             initial={{
