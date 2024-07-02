@@ -14,7 +14,7 @@ const config: Config = {
       backgroundImage: {
         'hero-background': "url('../public/images/hero-image.jpg')",
         'main': "url('../public/images/bg.png')",
-        'transparent-gradient': 'radial-gradient(circle, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%)'
+        'transparent-gradient': 'radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 50%)'
       },
     },
   },

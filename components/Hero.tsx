@@ -5,7 +5,7 @@ import { HeroHighlight, Highlight } from "./hero-highlight";
 
 const Hero = () => {
   return (
-    <div className="">
+    <div className="pb-24">
         <HeroHighlight>
         <motion.h1
             initial={{
@@ -22,7 +22,13 @@ const Hero = () => {
             }}
             className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
         >
-            Authentic flavors, lively ambiance, and the spirit of Japanese cuisine...{"\n"}
+            Authentic flavors,
+            <br></br>
+            lively ambiance, 
+            <br></br>
+            and the spirit of Japanese cuisine.
+            <br></br>
+            <br></br>
             <Highlight className="text-black dark:text-white">
                 A true Izakaya experience.
             </Highlight>
