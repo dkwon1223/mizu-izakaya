@@ -16,7 +16,7 @@ export function GallerySlideshow() {
       <h1 className="text-5xl lg:text-6xl sm:text-2xl font-fancy text-gold mb-10">
         Photo Gallery
       </h1>
-      <ImagesSlider className="h-[40rem] rounded-lg max-w-4xl" images={images}>
+      <ImagesSlider className="h-[30rem] rounded-lg max-w-4xl" images={images}>
         <motion.div
           initial={{
             opacity: 0,
