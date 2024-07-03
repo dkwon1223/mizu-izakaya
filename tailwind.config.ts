@@ -25,6 +25,9 @@ const config: Config = {
         fancy: ["var(--font-fancy)"],
         clean: ["var(--font-clean)"]
       },
+      colors: {
+        gold: "#E4C58F"
+      }
     },
   },
   plugins: [
