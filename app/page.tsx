@@ -14,7 +14,7 @@ export default function Home() {
         />
         <Hero />
       </div>
-      <div className="max-w-8xl w-screen px-12 py-12 bg-contain">
+      <div className="max-w-8xl w-screen px-12 py-12 bg-contain bg-main text-white">
         <About />
       </div>
     </main>
