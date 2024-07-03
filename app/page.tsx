@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import Image from "next/image";
 import mizuIcon from "../public/images/mizu-logo.png";
 import About from "@/components/About";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+import { GallerySlideshow } from "@/components/GallerySlideshow";
 
 export default function Home() {
   return (
@@ -15,8 +15,11 @@ export default function Home() {
         />
         <Hero />
       </div>
-      <div className="max-w-8xl w-screen px-12 py-12 text-white bg-gradient-to-bl from-neutral-900 to-slate-900">
+      <div className="max-w-8xl w-screen px-12 py-12 text-white bg-black bg-dot-white/[0.2]">
         <About />
+      </div>
+      <div className="max-w-8xl w-screen px-12 py-12 text-white bg-main bg-cover bg-no-repeat">
+       <GallerySlideshow />
       </div>
     </main>
   );
