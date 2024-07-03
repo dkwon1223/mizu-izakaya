@@ -59,7 +59,7 @@ const aboutContent = [
     alt: "Image of assorted sushi platter on wooden board",
   },
   {
-    title: "Our Story",
+    title: "Crafted Excellence",
     description: (
       <>
         <p>
