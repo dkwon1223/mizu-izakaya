@@ -6,7 +6,7 @@ import { GallerySlideshow } from "@/components/GallerySlideshow";
 
 export default function Home() {
   return (
-    <main className="relative bg-contain bg-no-repeat flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative bg-black bg-contain bg-no-repeat flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-8xl w-screen px-12 py-12 bg-building-exterior bg-cover bg-no-repeat bg-left-bottom">
         <Image
           alt="Mizu Izakaya Icon"
