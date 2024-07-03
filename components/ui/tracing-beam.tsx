@@ -72,9 +72,9 @@ export const TracingBeam = ({
             }}
             animate={{
               backgroundColor:
-                scrollYProgress.get() > 0 ? "white" : "var(--emerald-500)",
+                scrollYProgress.get() > 0 ? "white" : "var(--yellow-500)",
               borderColor:
-                scrollYProgress.get() > 0 ? "white" : "var(--emerald-600)",
+                scrollYProgress.get() > 0 ? "white" : "var(--yellow-600)",
             }}
             className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
           />
@@ -99,7 +99,7 @@ export const TracingBeam = ({
             d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
             stroke="url(#gradient)"
-            strokeWidth="1.25"
+            strokeWidth="3.25"
             className="motion-reduce:hidden"
             transition={{
               duration: 10,
@@ -114,10 +114,10 @@ export const TracingBeam = ({
               y1={y1} // set y1 for gradient
               y2={y2} // set y2 for gradient
             >
-              <stop stopColor="#18CCFC" stopOpacity="0"></stop>
-              <stop stopColor="#18CCFC"></stop>
-              <stop offset="0.325" stopColor="#6344F5"></stop>
-              <stop offset="1" stopColor="#AE48FF" stopOpacity="0"></stop>
+              <stop stopColor="#FFBF00" stopOpacity="0"></stop>
+              <stop stopColor="#FFCF40"></stop>
+              <stop offset="0.325" stopColor="#FFCF40"></stop>
+              <stop offset="1" stopColor="#A67C00" stopOpacity="0"></stop>
             </motion.linearGradient>
           </defs>
         </svg>
