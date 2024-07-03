@@ -79,7 +79,7 @@ const aboutContent = [
 
 const About = () => {
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center z-10">
       <h1 className="text-5xl lg:text-6xl sm:text-2xl font-fancy text-gold mb-10">
         About
       </h1>

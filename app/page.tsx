@@ -15,7 +15,7 @@ export default function Home() {
         />
         <Hero />
       </div>
-      <div className="max-w-8xl w-screen px-12 py-12 text-white bg-dark bg-main bg-contain bg-repeat-round">
+      <div className="max-w-8xl w-screen px-12 py-12 text-white bg-gradient-to-bl from-neutral-900 to-slate-900">
         <About />
       </div>
     </main>
