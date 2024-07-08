@@ -1,7 +1,16 @@
 "use client";
-
 import Image from "next/image";
 import { TabsUI } from "./ui/tabs";
+import dailySpecials from "../public/menu/daily-specials.jpg";
+import happyHour from "../public/menu/happy-hour.png";
+import food1 from "../public/menu/food1.jpg";
+import food2 from "../public/menu/food2.jpg";
+import nigiriSashimi from "../public/menu/nigirisashimi.jpg";
+import sushiRolls from "../public/menu/sushirolls.jpg";
+import sake from "../public/menu/sake.jpg";
+import cocktails from "../public/menu/cocktails.jpg";
+import spirits from "../public/menu/spirits.jpg";
+import desserts from "../public/menu/dessert.png";
 
 export function Tabs() {
   const tabs = [
@@ -9,53 +18,8 @@ export function Tabs() {
       title: "Daily Specials",
       value: "dailySpecials",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <DummyContent />
-        </div>
-      ),
-    },
-    {
-      title: "Food",
-      value: "food",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <DummyContent />
-        </div>
-      ),
-    },
-    {
-      title: "Sushi",
-      value: "sushi",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <DummyContent />
-        </div>
-      ),
-    },
-    {
-      title: "Sake",
-      value: "sake",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <DummyContent />
-        </div>
-      ),
-    },
-    {
-      title: "Drinks",
-      value: "drinks",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <DummyContent />
-        </div>
-      ),
-    },
-    {
-      title: "Spirits",
-      value: "spirits",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <DummyContent />
+        <div className="w-full relative rounded-2xl p-10 bg-dark flex flex flex-col">
+          <Image src={dailySpecials} alt="daily specials menu" />
         </div>
       ),
     },
@@ -63,8 +27,55 @@ export function Tabs() {
       title: "Happy Hour",
       value: "happyHour",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <DummyContent />
+        <div className="w-full relative rounded-2xl p-10 bg-dark flex flex-col">
+          <Image src={happyHour} alt="happy hour menu" />
+        </div>
+      ),
+    },
+    {
+      title: "Food",
+      value: "food",
+      content: (
+        <div className="w-full relative rounded-2xl p-10 bg-dark flex flex-col">
+          <Image src={food1} alt="food menu part one" />
+          <Image src={food2} alt="food menu part two" />
+        </div>
+      ),
+    },
+    {
+      title: "Sushi",
+      value: "sushi",
+      content: (
+        <div className="w-full relative rounded-2xl p-10 bg-dark flex flex-col">
+          <Image src={nigiriSashimi} alt="nigiri and sashimi menu" />
+          <Image src={sushiRolls} alt="sushi rolls menu" />
+        </div>
+      ),
+    },
+    {
+      title: "Sake",
+      value: "sake",
+      content: (
+        <div className="w-full relative rounded-2xl p-10 bg-dark flex flex-col">
+          <Image src={sake} alt="sake menu" />
+        </div>
+      ),
+    },
+    {
+      title: "Drinks",
+      value: "drinks",
+      content: (
+        <div className="w-full relative rounded-2xl p-10 bg-dark flex flex-col">
+          <Image src={cocktails} alt="cocktail menu" />
+        </div>
+      ),
+    },
+    {
+      title: "Spirits",
+      value: "spirits",
+      content: (
+        <div className="w-full relative rounded-2xl p-10 bg-dark flex flex-col">
+          <Image src={spirits} alt="spirits menu" />
         </div>
       ),
     },
@@ -72,12 +83,11 @@ export function Tabs() {
       title: "Desserts",
       value: "desserts",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <DummyContent />
+        <div className="w-full relative rounded-2xl p-10 bg-dark flex flex-col">
+          <Image src={desserts} alt="desserts menu" />
         </div>
       ),
     },
-    
   ];
 
   return (
@@ -86,15 +96,3 @@ export function Tabs() {
     </div>
   );
 }
-
-const DummyContent = () => {
-  return (
-    <Image
-      src="/linear.webp"
-      alt="dummy image"
-      width="1000"
-      height="1000"
-      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
-    />
-  );
-};
