@@ -18,7 +18,7 @@ export function Tabs() {
       title: "Daily Specials",
       value: "dailySpecials",
       content: (
-        <div className="w-full relative rounded-2xl p-10 bg-dark flex flex flex-col">
+        <div className="w-full relative rounded-2xl p-10 bg-dark flex flex-col">
           <Image src={dailySpecials} alt="daily specials menu" />
         </div>
       ),

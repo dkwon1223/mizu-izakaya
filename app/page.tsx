@@ -3,6 +3,7 @@ import Image from "next/image";
 import mizuIcon from "../public/images/mizu-logo.png";
 import About from "@/components/About";
 import { GallerySlideshow } from "@/components/GallerySlideshow";
+import NavBar from "@/components/NavBar";
 
 export default function Home() {
   return (
