@@ -33,15 +33,17 @@ const GalleryPage = () => {
     <section className="max-w-8xl w-screen px-12 py-24 text-white bg-black bg-dot-white/[0.2] flex flex-col justify-center items-center">
       <Link href={"/"}>
         <Image
-            alt="Mizu Izakaya Icon"
-            src={mizuLogo}
-            className="w-28 sm:w-24 lg:w-40 mb-4 absolute top-12 left-16"
+          alt="Mizu Izakaya Icon"
+          src={mizuLogo}
+          className="w-28 sm:w-24 lg:w-40 mb-4 absolute top-12 left-16"
         />
       </Link>
-      <h1 className="text-5xl lg:text-6xl sm:text-2xl font-fancy text-gold mb-10">
-        Photo Gallery
-      </h1>
-      <LayoutGrid cards={cards} />
+      <div className="w-full h-full flex flex-col items-center justify-center my-12">
+        <h1 className="text-5xl lg:text-6xl sm:text-2xl font-fancy text-gold mb-10">
+          Photo Gallery
+        </h1>
+        <LayoutGrid cards={cards} />
+      </div>
     </section>
   );
 };
