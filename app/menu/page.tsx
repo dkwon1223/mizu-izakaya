@@ -14,7 +14,7 @@ const MenuPage = () => {
           className="w-28 sm:w-24 lg:w-40 mb-4 absolute top-12 left-16"
         />
       </Link>
-      <div className="w-full max-w-7xl flex flex-col items-center justify-center">
+      <div className="w-full max-w-7xl flex flex-col items-center justify-center mt-20">
         <h1 className="text-5xl lg:text-6xl sm:text-2xl font-fancy text-gold my-12">
           Explore the Menu
         </h1>
