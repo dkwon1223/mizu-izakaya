@@ -79,7 +79,7 @@ const aboutContent = [
 
 const About = () => {
   return (
-    <section className="flex flex-col items-center justify-center z-10">
+    <section className="flex flex-col items-center justify-center z-10 max-w-7xl sm:w-screen" id="about">
       <h1 className="text-5xl lg:text-6xl sm:text-2xl font-fancy text-gold mb-10">
         About
       </h1>
@@ -87,11 +87,11 @@ const About = () => {
         <div className="max-w-4xl mx-auto antialiased pt-4 relative">
           {aboutContent.map((item, index) => (
             <div key={`content-${index}`} className="mb-10">
-              <h2 className="bg-black text-gold rounded-full text-xl sm:text-lg lg:text-2xl w-fit px-4 py-1 mb-4 font-fancy">
+              <h2 className="bg-black text-gold rounded-full text-xl sm:text-2xl lg:text-3xl w-fit px-4 py-1 mb-4 font-fancy">
                 {item.title}
               </h2>
 
-              <div className="text-lg sm:text-md lg:text-xl  prose prose-sm dark:prose-invert font-clean">
+              <div className="text-lg sm:text-md lg:text-xl  prose prose-sm dark:prose-invert font-clean text-wrap">
                 {item?.image && (
                   <Image
                     src={item.image}
