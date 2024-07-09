@@ -1,11 +1,27 @@
-import React from 'react'
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import { AuroraBackground } from "../../components/ui/aurora-background";
 
 const Reservations = () => {
   return (
-    <section className='flex flex-col justify-center items-center bg-dark h-screen w-screen'>
-      <h1 className="text-5xl lg:text-6xl sm:text-2xl font-fancy text-gold mb-10">Reserve a Table with Us</h1>
-    </section>
-  )
-}
+    <AuroraBackground>
+      <motion.div
+        initial={{ opacity: 0.0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="relative flex flex-col gap-4 items-center justify-center px-4"
+      >
+        <div className="text-3xl md:text-7xl font-bold dark:text-white text-center font-fancy">
+          Reserve a Table with Us
+        </div>
+      </motion.div>
+    </AuroraBackground>
+  );
+};
 
-export default Reservations
+export default Reservations;
