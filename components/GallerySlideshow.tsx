@@ -12,7 +12,7 @@ export function GallerySlideshow() {
     "https://resizer.otstatic.com/v2/photos/xlarge/1/41884826.webp",
   ];
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center" id="gallerySlideShow">
       <h1 className="text-5xl lg:text-6xl sm:text-2xl font-fancy text-gold mb-10">
         Photo Gallery
       </h1>
