@@ -35,7 +35,7 @@ const GalleryPage = () => {
         <Image
           alt="Mizu Izakaya Icon"
           src={mizuLogo}
-          className="w-28 sm:w-24 lg:w-40 mb-4 absolute top-12 left-16"
+          className="w-28 sm:w-24 lg:w-40 mb-4 absolute top-12 left-16 cursor-pointer"
         />
       </Link>
       <div className="w-full h-full flex flex-col items-center justify-center my-12">
