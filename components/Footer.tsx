@@ -9,7 +9,7 @@ import yelpIcon from "../public/images/yelp-icon.svg";
 const Footer = () => {
   return (
     <footer className="h-[15rem] w-screen bg-black flex justify-center">
-      <div className="max-w-5xl flex justify-around items-center border border-gold w-full py-4">
+      <div className="max-w-5xl flex justify-around items-center w-full py-4">
         <div className="">
           <Link href={"/"}>
             <Image
