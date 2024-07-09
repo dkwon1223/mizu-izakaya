@@ -52,7 +52,7 @@ export const TabsUI = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative px-4 py-2 rounded-full", tabClassName)}
+            className={cn("relative px-4 py-2 rounded-full lg:text-xl md:text-lg sm:text-sm font-clean", tabClassName)}
             style={{
               transformStyle: "preserve-3d",
             }}
@@ -100,7 +100,7 @@ export const FadeInDiv = ({
     return tab.value === tabs[0].value;
   };
   return (
-    <div className="relative w-full h-full">
+    <div className="w-full h-full">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}
