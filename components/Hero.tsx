@@ -29,7 +29,7 @@ const Hero = () => {
             and the spirit of Japanese cuisine.
             <br></br>
             <br></br>
-            <Highlight className="text-black dark:text-gold">
+            <Highlight className="text-gold dark:text-gold">
                 A true Izakaya experience.
             </Highlight>
         </motion.h1>
