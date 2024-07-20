@@ -18,7 +18,7 @@ export default function Home() {
         </Link>
         <Hero />
       </div>
-      <div className="max-w-8xl w-screen px-12 py-12 text-white bg-black bg-dot-white/[0.2]">
+      <div className="max-w-8xl w-screen px-12 py-12 text-white bg-black bg-dot-white/[0.2] flex justify-center items-center">
         <About />
       </div>
       <div className="max-w-8xl w-screen px-12 py-12 text-white bg-main bg-cover bg-no-repeat">
