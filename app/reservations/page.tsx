@@ -33,7 +33,7 @@ const Reservations = () => {
         }}
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
-        <div className="text-3xl md:text-7xl font-bold dark:text-white text-center font-fancy">
+        <div className="text-3xl md:text-7xl font-bold text-white dark:text-white text-center font-fancy">
           Reserve a Table with Us
           <div id="openTableWrapper" className="h-12"></div>
         </div>
