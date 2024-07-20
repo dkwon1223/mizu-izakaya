@@ -20,7 +20,7 @@ const Hero = () => {
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
             }}
-            className="text-2xl px-4 md:text-4xl lg:text-5xl text-neutral-700 dark:text-gold max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
+            className="text-2xl px-4 md:text-4xl lg:text-5xl dark:text-gold text-gold max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
         >
             Authentic flavors,
             <br></br>

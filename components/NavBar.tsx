@@ -9,22 +9,22 @@ function NavBar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "fixed top-10 inset-x-0 max-w-xl mx-auto z-50 border border-gold rounded-full font-fancy text-xl sm:text-lg",
+        "fixed top-10 inset-x-0 max-w-xl mx-auto z-50 border border-gold rounded-full font-fancy text-xl text-white sm:text-lg",
         className
       )}
     >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Home">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/">Mizu</HoveredLink>
-            <HoveredLink href="/#about">About</HoveredLink>
+            <HoveredLink href="/" className="text-white">Mizu</HoveredLink>
+            <HoveredLink href="/#about" className="text-white">About</HoveredLink>
           </div>
         </MenuItem>
         <Link href="/gallery" className="font-fancy text-xl sm:text-lg text-white">Gallery</Link>
         <MenuItem setActive={setActive} active={active} item="Menu">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/menu">View Menu</HoveredLink>
-            <HoveredLink href="https://order.toasttab.com/online/mizu-izakaya">
+            <HoveredLink href="/menu" className="text-white">View Menu</HoveredLink>
+            <HoveredLink href="https://order.toasttab.com/online/mizu-izakaya" className="text-white">
               Order Online
             </HoveredLink>
           </div>
